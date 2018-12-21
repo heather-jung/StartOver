@@ -1,0 +1,290 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  background-color: #F8F8F8;
+  text-align: left;
+}
+
+/* Typography */
+h1 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.1em;     
+  font-weight: 300;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+/* Button */
+.button {
+  font-family: inherit;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition-timing-function: ease; 
+  transition-delay: 0s;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  /* mouse turns into hand when hovering */
+  opacity: 0.8;
+  /* reduces opacity of the button to 80% */
+}
+
+.button:hover {
+  font-size: 20px;
+}
+
+/* Links */
+
+/*SVG Icons*/
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+@keyframes svg-icon {
+  from {fill: black;}
+  to {fill: pink}
+}
+
+.svg-icon {
+  animation: 4s color-change infinite alternate linear;
+}
+
+
+/* Header Styling */
+header {
+  background: white;
+  height: 100px;
+}
+
+nav {
+  float: right;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+/* Layout */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.column-1 {
+  width: 100%;
+}
+
+.wrapper-bottom {
+  background-color: #F8F8F8;
+  border-top: 0.5px solid gray;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-bottom-noborder {
+  background-color: #F8F8F8;
+  width: 100%;
+  height: 100%;
+}
+
+/* Work Page */
+.introcontainers {
+  width: 100%;
+  height: 550px;
+  background-color: #F8F8F8;
+
+  padding: 50px;
+  margin-bottom: 1px;
+  border-bottom: 1px solid black;
+}
+
+.work-summary {
+  width: 450px;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.work-name {
+  font-size: 24px;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.work-description {
+  font-size: 18px;
+  padding: 20px;
+  padding-left: 0;
+  line-height: 1.4;
+}
+
+.work-photo {
+  float: right;
+  margin-top: -200px;
+  margin-right: 50px;
+}
+
+.name-logo {
+    padding-left: 30px;
+    padding-top: 25px;
+    color: gray;
+}
+
+/* Contact Page */
+.contactme-summary {
+ margin-left: 100px;
+margin-top: 50px;
+}
+
+.contactme-title {
+  margin: 3px;
+}
+
+.contactme-description {
+  margin: 3px 3px 80px 3px;
+}
+
+.linkedin {
+  width: 2%;
+  position: relative;
+  float: left;
+}
+
+/* About Page */
+.aboutme-summary {
+display: inline-block;
+width: 500px;
+margin-left: 100px;
+margin-top: 50px;
+}
+
+.aboutme-title {
+  margin: 3px;
+}
+
+.aboutme-description {
+  margin: 3px 3px 50px 3px;
+}
+
+.aboutme-description h2 {
+  line-height: 1.5;
+  font-size: 1em;
+  font-weight: 300px;
+}
+
+.profilepic {
+  display: inline-block;
+  width: 25%;
+  padding: 30px;
+  margin: 30px;
+}
+
+/* Experts Page */
+.describe-containers {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 50px 200px 50px 200px;
+}
+
+#describeapp h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+#describeapp p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* ParkX Page */
+
+
+/* iMobile Heartbeat Page */
+
+
+/* Patient Satisfaction Page */
+
+
+/* Responsive Design */
+/*** Large devices only ***/
+@media (min-width: 1100) {
+  header {
+
+  }
+  .column-1 {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 780) and (max-width: 1100) {
+  header {
+
+  }
+  .column-1 {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 992px) {
+
+
+/*** Medium devices only ***/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+/*** Small devices only ***/
+@media (min-width: 767px) {
+
